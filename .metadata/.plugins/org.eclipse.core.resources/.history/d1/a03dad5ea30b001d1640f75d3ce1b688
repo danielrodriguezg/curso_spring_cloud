@@ -1,0 +1,21 @@
+package com.danielrodriguez.springboot.app.productos.model.service;
+
+import java.util.List;
+
+import com.danielrodriguez.springboot.app.productos.model.entity.Producto;
+
+public class ProductoServiceImpl implements IProductoService {
+
+	@Override
+	public List<Producto> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

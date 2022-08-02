@@ -1,0 +1,5 @@
+package com.danielrodriguez.springboot.app.productos.model.dao;
+
+public class ProductoDao {
+
+}

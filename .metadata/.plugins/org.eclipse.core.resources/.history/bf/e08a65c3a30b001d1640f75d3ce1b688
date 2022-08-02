@@ -1,0 +1,30 @@
+package com.danielrodriguez.springboot.app.productos.model.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.danielrodriguez.springboot.app.productos.model.dao.ProductoDao;
+import com.danielrodriguez.springboot.app.productos.model.entity.Producto;
+
+@Service
+public class ProductoServiceImpl implements IProductoService {
+
+	private ProductoDao productoDao;
+	
+	@Override
+	@Transactional(readOnly=true)
+	public List<Producto> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	@Transactional(readOnly=true)
+	public Producto findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

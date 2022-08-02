@@ -1,0 +1,7 @@
+package com.danielrodriguez.springboot.app.productos.model.entity;
+
+@Entity
+@Table(name = "productos")
+public class Producto {
+
+}
