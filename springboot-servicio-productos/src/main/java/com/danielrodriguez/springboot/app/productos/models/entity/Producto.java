@@ -1,4 +1,4 @@
-package com.danielrodriguez.springboot.app.productos.model.entity;
+package com.danielrodriguez.springboot.app.productos.models.entity;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "productos")
@@ -29,6 +30,18 @@ public class Producto implements Serializable{
 	@Column(name="created_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
+
+	@Transient
+	private Integer port;
+
+
+	
+	public Integer getPort() {
+		return port;
+	}
+	public void setPort(Integer port) {
+		this.port = port;
+	}
 	public Long getId() {
 		return id;
 	}

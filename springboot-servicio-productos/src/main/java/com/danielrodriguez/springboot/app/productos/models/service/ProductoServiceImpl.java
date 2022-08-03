@@ -1,4 +1,4 @@
-package com.danielrodriguez.springboot.app.productos.model.service;
+package com.danielrodriguez.springboot.app.productos.models.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.danielrodriguez.springboot.app.productos.model.dao.ProductoDao;
-import com.danielrodriguez.springboot.app.productos.model.entity.Producto;
+import com.danielrodriguez.springboot.app.productos.models.dao.ProductoDao;
+import com.danielrodriguez.springboot.app.productos.models.entity.Producto;
 
 @Service
 public class ProductoServiceImpl implements IProductoService {
